@@ -28,13 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.txtEdit = new System.Windows.Forms.MaskedTextBox();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.lblEdit = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // txtEdit
+            // 
+            this.txtEdit.Location = new System.Drawing.Point(12, 12);
+            this.txtEdit.Name = "txtEdit";
+            this.txtEdit.Size = new System.Drawing.Size(270, 21);
+            this.txtEdit.TabIndex = 0;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Font = new System.Drawing.Font("Tahoma", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Location = new System.Drawing.Point(12, 49);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(270, 66);
+            this.btnEdit.TabIndex = 1;
+            this.btnEdit.Text = "입력";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            // 
+            // lblEdit
+            // 
+            this.lblEdit.AutoSize = true;
+            this.lblEdit.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lblEdit.Location = new System.Drawing.Point(12, 130);
+            this.lblEdit.Name = "lblEdit";
+            this.lblEdit.Size = new System.Drawing.Size(57, 23);
+            this.lblEdit.TabIndex = 2;
+            this.lblEdit.Text = "결과 :";
+            this.lblEdit.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(294, 180);
+            this.Controls.Add(this.lblEdit);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.txtEdit);
+            this.MaximizeBox = false;
+            this.Name = "Form1";
+            this.Text = "문자열 출력";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.MaskedTextBox txtEdit;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Label lblEdit;
     }
 }
 
