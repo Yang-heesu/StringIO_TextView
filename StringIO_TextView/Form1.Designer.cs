@@ -69,6 +69,7 @@
             this.Controls.Add(this.lblEdit);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.txtEdit);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "문자열 출력";
