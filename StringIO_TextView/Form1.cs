@@ -52,7 +52,7 @@ namespace StringIO_TextView
             //sender -> 이벤트가 발생한 객체, e -> 버튼
             //keydown : 키를 눌렀을 때
             //keyup : 키를 뗐을 때
-            //keypress : 키를 누르고 있을 때
+            //keypress : 키를 누르고 있을 때 
             if (e.KeyChar == (char)13)
                 {
                     if (TextCheck())
