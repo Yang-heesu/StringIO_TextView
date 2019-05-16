@@ -63,5 +63,10 @@ namespace StringIO_TextView
                     }
                 }
             }
+
+        private void txtEdit_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
